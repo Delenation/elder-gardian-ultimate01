@@ -29,6 +29,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <script src="https://webapi.amap.com/maps?v=2.0&key=a86fb7e2110d643204dda74c36333938"></script>
+        <script src="https://a.amap.com/jsapi_demos/static/demo-center/js/demoutils.js"></script>
         <Meta />
         <Links />
       </head>

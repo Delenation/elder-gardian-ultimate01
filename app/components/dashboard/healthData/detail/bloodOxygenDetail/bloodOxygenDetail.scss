@@ -1,0 +1,26 @@
+.blood-oxygen-detail {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.oxygen-line {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  transform: translateY(-50%);
+  opacity: 0.3;
+}
+
+.oxygen-value {
+  position: relative;
+  top: 15%;
+  z-index: 1;
+  text-align: center;
+}

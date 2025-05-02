@@ -1,0 +1,52 @@
+.body-root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.status {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  font-weight: bold;
+  color: black;
+  padding-left: 10px;
+  box-sizing: border-box;
+  display: flex;
+
+  // .status-level {
+  //   &.healthy {
+  //     color: #11c41a;
+  //   }
+
+  //   &.mild {
+  //     color: #1890ff;
+  //   }
+
+  //   &.moderate {
+  //     color: #fa8c16;
+  //   }
+
+  //   &.severe {
+  //     color: #ff4d4f;
+  //   }
+  // }
+}
+
+.root-view {
+  width: 100%;
+  height: calc(100% - 30px);
+
+  .body {
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

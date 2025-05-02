@@ -1,0 +1,39 @@
+.custom-calendar {
+  .ant-picker-cell-inner .ant-picker-calendar-date {
+    height: 30px!important;
+  }
+  .ant-picker-calendar-date {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ant-picker-calendar-date-content {
+    height: 20px!important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden!important;
+  }
+  .ant-badge-status-dot {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.appointment-list-container {
+  margin-top: 16px;
+}
+
+.appointment-list-container .ant-list {
+  max-height: calc(100% - 394px);
+  overflow-y: auto;
+}
+
+.appointment-list-header {
+  font-weight: 500;
+  font-size: 16px;
+}

@@ -1,0 +1,73 @@
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.map-status {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  display: flex;
+  gap: 8px;
+  z-index: 100;
+}
+
+.status-title,
+.status-switch {
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.status-switch {
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #20d848; /* 绿色 */
+}
+
+.map-element {
+  width: 100%;
+  height: 100%;
+}
+
+.draw-button {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  background-color: #1890ff; /* 蓝色，匹配项目主题 */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #40a9ff;
+  }
+}
+
+a.amap-logo,
+div.amap-copyright {
+  display: none !important;
+}
+
+.clear-button {
+  position: absolute;
+  bottom: 12px;
+  right: 100px; /* Adjust to position beside draw-button */
+  padding: 6px 12px;
+  background-color: #ff4d4f; /* Red to indicate clearing */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.clear-button:hover {
+  background-color: #ff7875;
+}

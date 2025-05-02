@@ -1,0 +1,174 @@
+.main {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #fafafa;
+}
+
+.navbar {
+  width: 100%;
+  height: 64px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.display {
+  width: 1280px;
+  min-width: 1280px;
+  height: calc(100vh - 64px);
+  min-height: 640px;
+  max-height: calc(100vh - 64px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.sidebar {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+
+  .title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #4b5563;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    margin-top: 10px;
+  }
+
+  .title-icon {
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+      fill: #1890ff;
+    }
+  }
+
+  .title-text {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .person-info {
+    width: 240px;
+    position: relative;
+  }
+
+  .tabbar {
+    width: 240px;
+    height: 180px;
+  }
+}
+
+.sections {
+  width: 1040px;
+  min-height: calc(100vh - 64px);
+}
+
+.page-transition {
+  width: 100%;
+  height: 100%;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.person-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  padding: 16px;
+  overflow-x: auto;
+}
+
+.person-card {
+  flex: 1;
+  min-width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 12px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.person-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.avatar-container {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e5e7eb;
+  margin-bottom: 8px;
+}
+
+.avatar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6b7280;
+  font-size: 20px;
+}
+
+.person-name {
+  font-size: 16px;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.person-info-text {
+  font-size: 12px;
+  font-weight: 400;
+  color: #4b5563;
+  margin: 2px 0;
+}
+
+.select-button {
+  margin-top: 8px;
+  padding: 6px 12px;
+  background-color: #1890ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.select-button:hover {
+  background-color: #40a9ff;
+}
+
+$global-color: '#1890ff';

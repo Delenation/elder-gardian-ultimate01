@@ -1,0 +1,68 @@
+.navbar-content {
+  width: 100%;
+  height: 100%;
+  background-color: #1890ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: relative;
+}
+
+.logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+  position: relative;
+  display: inline-block;
+  perspective: -100px;
+
+  &::after {
+    content: "智护老龄";
+    position: absolute;
+    left: 0;
+    top: 60%;
+    transform: scaleY(-1) rotateX(60deg);
+    color: white;
+    opacity: 0.4;
+    font-size: 24px;
+    font-weight: bold;
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+  }
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-avatar {
+  cursor: pointer;
+}
+
+.navbar-icon {
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: #e6f7ff;
+  }
+}
