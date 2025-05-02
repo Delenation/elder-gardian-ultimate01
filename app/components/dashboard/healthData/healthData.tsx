@@ -19,10 +19,10 @@ interface PersonData {
 export default function HealthData() {
   const selectedPersonId = useContext(SelectedPersonContext) || "001";
   const [personData, setPersonData] = useState<PersonData[]>([
-    { key: "heartRate", label: "心率", value: null, unit: "bpm", icon: "/assets/heart_rate.svg", color: "#ff4d4f" },
-    { key: "bloodOxygen", label: "血氧", value: null, unit: "%", icon: "/assets/blood_oxygen.svg", color: "#52c41a" },
-    { key: "steps", label: "步数", value: null, unit: "步", icon: "/assets/walking.svg", color: "#fa8c16" },
-    { key: "waterIntake", label: "饮水量", value: null, unit: "ml", icon: "/assets/cup_water.svg", color: "#1890ff" },
+    { key: "heartRate", label: "心率", value: null, unit: "bpm", icon: "/dashboard/assets/heart_rate.svg", color: "#ff4d4f" },
+    { key: "bloodOxygen", label: "血氧", value: null, unit: "%", icon: "/dashborad/assets/blood_oxygen.svg", color: "#52c41a" },
+    { key: "steps", label: "步数", value: null, unit: "步", icon: "/dashboard/assets/walking.svg", color: "#fa8c16" },
+    { key: "waterIntake", label: "饮水量", value: null, unit: "ml", icon: "/dashboard/assets/cup_water.svg", color: "#1890ff" },
   ]);
   const [activeTab, setActiveTab] = useState<number | null>(0);
 

@@ -5,7 +5,7 @@ import tsconfigPaths from "vite-tsconfig-paths";
 
 export default defineConfig({
   plugins: [tailwindcss(), reactRouter(), tsconfigPaths()],
-  base: '/elder-gardian-ultimate01/',
+  // base: '/elder-gardian-ultimate01/',
   server: {
     proxy: {
       "/api": {
